@@ -29,4 +29,5 @@ javascript: (function () {
 	}
     doc.write("</ol>");
     doc.close();
-})();
+
+})(); /* by @tiagopedras */
