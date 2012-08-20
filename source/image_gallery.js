@@ -16,7 +16,7 @@ javascript: (function () {
 	for (i = 0; url = document.links[i]; ++i) {
 	    image_url = url.href;
 	    if (image_url && validate(image_url)) {
-	        doc.write("<li><img src=\"" + transform(image_url) + "\"></li>");
+	        doc.write("<li><a href=\""+transform(image_url)+"\" target=\"_blank\"><img src=\"" + transform(image_url) + "\"></a></li>");
 	    }
 	}
     doc.write("</ol>");
