@@ -1,6 +1,9 @@
 Image gallery
 =====
-Open all images (with a direct link to a bigger version) in a gallery-like page.
+Open important images/photos in a gallery-like page.
+
+New version now scans the page for link tags with a direct url to an image or tries to open large image tags found in the body.
+(Background images fallback soon)
 
 Usage
 -----
