@@ -43,7 +43,7 @@ javascript: (function () {
         }
 
         if (images.length == 0) { status += "And no large images found."; }
-        else                    { status += "But "; }
+        else                    { status += "But " + images.length + " large images found. "; }
 	} else {
     	status += images.length + " images found. ";
     }
