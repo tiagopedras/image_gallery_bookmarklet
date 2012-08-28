@@ -59,11 +59,8 @@ javascript: (function () {
 	}
     doc.write("</ol>");
     doc.write('<small id="urls"><h3>URLs</h3><ol>');
-	for (i = 0; url = document.links[i]; ++i) {
-	    image_url = url.href;
-	    if (image_url && validate(image_url)) {
-	        doc.write("<li>" + transform(image_url) + "</li>");
-	    }
+	for (i = 0; url = images[i]; ++i) {
+	    doc.write("<li>" + transform(images[i]) + "</li>");
 	}
     doc.write("</ol></small></body></html>");
     doc.close();
