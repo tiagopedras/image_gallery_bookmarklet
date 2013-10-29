@@ -51,9 +51,9 @@ javascript: (function () {
 
 	//CREATE NEW PAGE AND CONTENT
 	var doc = open().document;
-	doc.write("<html><head><style>body { margin: 20px; background-color: #222222; font-family: Helvetica, Arial; color: white; } a { color: white; } #status { float:left; } nav { float: right; text-align: right; margin-bottom: 20px; } #images { overflow: hidden; margin-top: 20px; list-style: none; padding: 0;} #images li { float: left; margin-bottom: 10px; }#images.grid6 li { width: 16.66%; height: 16.66%; }#images.grid4 li { width: 25%; height: 25%; }#images.grid2 li { width: 50%; height: 50%; }img { max-width: 100%; max-height: 100%; } ol { clear:both; } #urls { clear: both; margin-top:90px; color: #CCC; }</style></head>");
+	doc.write("<html><head><style>body { margin: 20px; background-color: #222222; font-family: Helvetica, Arial; color: white; } a { color: white; } #status { float:left; } nav { float: right; text-align: right; margin-bottom: 20px; } #images { overflow: hidden; margin-top: 20px; list-style: none; padding: 0;} #images li { float: left; margin-bottom: 10px; margin-right: 10px; }  #images.grid6 li img { height: 400px } #images.grid4 li img { height: 300px; } #images.grid2 li img { height: 200px; } ol { clear:both; } #urls { clear: both; margin-top:90px; color: #CCC; }</style></head>");
 	doc.write('<body><small id="status">'+status+'</small><nav><a href="javascript:document.getElementById(\'images\').setAttribute(\'class\', \'grid6\');" id="grid6">Grid of 6</a> <a href="javascript:document.getElementById(\'images\').setAttribute(\'class\', \'grid4\');" id="grid4">Grid of 4</a> <a href="javascript:document.getElementById(\'images\').setAttribute(\'class\', \'grid2\');" id="grid2">Grid of 2</a></nav>');
-	doc.write('<ol id="images" class="grid4">');
+	doc.write('<ol id="images" class="grid2">');
 	for (i = 0; url = images[i]; ++i) {
     	doc.write("<li><a href=\""+transform(images[i])+"\" target=\"_blank\"><img src=\"" + transform(images[i]) + "\"></a></li>");
 	}
